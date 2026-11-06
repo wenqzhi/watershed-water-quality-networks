@@ -1,4 +1,4 @@
-# watershed water-quality network analysis
+# Watershed water-quality network analysis
 
 This repository contains the R scripts supplied for Figures 2–6. It is organized for version control and reproducible local use. The scripts retain their analysis logic; the machine-specific data path has been replaced with a single local setting.
 
@@ -23,13 +23,6 @@ source("scripts/figures/fig02_network_structure.R")
 ## Dependencies
 
 Scripts load or install their own R packages. Depending on the figure, packages include `readr`, `dplyr`, `tidyr`, `stringr`, `tibble`, `ggplot2`, `sf`, `igraph`, `patchwork`, `scales`, `lubridate`, and `purrr`. `sf` may also require system geospatial libraries on some computers.
-
-## Figure 4 versions
-
-Two Figure 4 scripts are retained because they implement different comparisons:
-
-- `fig04_yield_castdm.R`: newer yield-oriented CAST-DM comparison; it expects the additional CAST-DM annual export and may use a verified station-area table.
-- `fig04_load_comparison_legacy.R`: earlier load-oriented comparison.
 
 Use the version matching the manuscript and reported units. Do not treat the two outputs as interchangeable.
 
