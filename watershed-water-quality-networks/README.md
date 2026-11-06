@@ -1,4 +1,4 @@
-# WRR1 watershed water-quality network analysis
+# watershed water-quality network analysis
 
 This repository contains the R scripts supplied for Figures 2–6. It is organized for version control and reproducible local use. The scripts retain their analysis logic; the machine-specific data path has been replaced with a single local setting.
 
