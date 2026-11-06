@@ -5,20 +5,20 @@ This repository contains the R scripts supplied for Figures 2–6. It is organiz
 ## Repository contents
 
 - `scripts/figures/`: figure and analysis scripts, renamed by figure and pipeline step.
-- `config.R`: reads the local data-directory setting from `WRR_DATA_ROOT`.
+- `config.R`: reads the local data-directory setting from `DATA_ROOT`.
 - `docs/RUN_ORDER.md`: suggested execution order and dependencies.
 - `.gitignore`: excludes local data, outputs, and geospatial/binary files from Git.
 
 ## Configure the data path
 
-The data are not included in this repository. Set the `WRR_DATA_ROOT` environment variable to the existing local folder that contains the source data and intermediate directories used by the scripts. For example, in R before running a script:
+The data are not included in this repository. Set the `DATA_ROOT` environment variable to the existing local folder that contains the source data and intermediate directories used by the scripts. For example, in R before running a script:
 
 ```r
-Sys.setenv(WRR_DATA_ROOT = "D:/WRR_project/data")
-source("scripts/figures/fig02_network_structure.R")
+Sys.setenv(DATA_ROOT = "D:/project/data")
+source("scripts/figures/network_structure.R")
 ```
 
-`config.R` is sourced by each script, so run scripts with the repository root as the R working directory (or open `WRR1.Rproj` in RStudio first). On Windows, use forward slashes in the path. Do not commit raw data, restricted data, credentials, or API keys.
+`config.R` is sourced by each script, so run scripts with the repository root as the R working directory (or open `WR.Rproj` in RStudio first). On Windows, use forward slashes in the path. Do not commit raw data, restricted data, credentials, or API keys.
 
 ## Dependencies
 
